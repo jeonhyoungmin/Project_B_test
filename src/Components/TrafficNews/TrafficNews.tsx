@@ -93,7 +93,10 @@ const TrafficNews = () => {
           setOpen(!open);
         }}>
         <Siren>
-          <img className='img' src='./img/Siren.png' alt='siren'></img>
+          <img
+            className='img'
+            src='https://i.ibb.co/DR3r17L/Siren.png'
+            alt='siren'></img>
         </Siren>
         <WrapDiv>
           {news !== null ? (

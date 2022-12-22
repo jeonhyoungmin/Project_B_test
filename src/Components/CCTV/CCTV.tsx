@@ -43,7 +43,7 @@ const CCTV = () => {
           kakao.maps.ControlPosition.TOPRIGHT
         );
 
-        const imgSrc = './img/CCTV.png',
+        const imgSrc = 'https://i.ibb.co/wQhBP95/CCTV.png',
           imgSize = new kakao.maps.Size(25, 40);
         // cctv 아이콘 크기
         const imageOption = { offset: new kakao.maps.Point(15, 33) };

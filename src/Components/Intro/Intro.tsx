@@ -46,7 +46,7 @@ const IntroWrap = styled.div`
       // 올 그린 이미지
       width: ${calcPx(130)};
       height: ${calcPx(13)};
-      background: url('./img/intro_AllGreen.png') no-repeat;
+      background: url('https://i.ibb.co/4KqxGjk/Intro-All-Green.png') no-repeat;
       background-size: ${calcPx(130)} ${calcPx(13)};
       position: relative;
       bottom: 11vh;
@@ -56,7 +56,7 @@ const IntroWrap = styled.div`
       // 가운데 동그라미 이미지
       width: ${calcPx(200)};
       height: ${calcPx(200)};
-      background: url('./img/intro_Traffic.png') no-repeat;
+      background: url('https://i.ibb.co/tY2r0qh/intro-Traffic.png') no-repeat;
       background-size: ${calcPx(200)} ${calcPx(200)};
       ${({ theme }) => theme.flexSet.flexRowCenter};
       & > div {

@@ -113,7 +113,7 @@ const Modal = (props: any) => {
             </div>
             <div>
               <div>
-                <img src='./img/Siren.png' alt='siren'></img>
+                <img src='https://i.ibb.co/DR3r17L/Siren.png' alt='siren'></img>
                 <h3>교통 돌발 정보</h3>
               </div>
               {DataArr.map((value: any) => {
