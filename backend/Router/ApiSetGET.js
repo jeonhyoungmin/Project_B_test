@@ -18,6 +18,7 @@ router.get("/:id", (req, res) => {
         connection.query(Query, (err, row, field) => {
           if (err) throw err;
           res.send(row);
+          console.log('CCTV 연동 완료')
         });
         break;
       case "outbreak":
@@ -29,6 +30,7 @@ router.get("/:id", (req, res) => {
           (error, response, body) => {
             const Tojson = converter.xml2json(body);
             res.send(Tojson);
+            console.log('돌발상황 완료')
           }
         );
         break;
