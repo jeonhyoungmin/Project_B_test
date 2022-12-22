@@ -38,7 +38,7 @@ const IntroWrap = styled.div`
     transition: ease 0.5s;
     width: 100vw;
     height: 100vh;
-    background: url('./img/intro_bg_Y.png') no-repeat center;
+    background: url('https://i.ibb.co/fFHh6Gw/Intro-bg-y.png') no-repeat center;
     background-size: cover;
     flex-direction: column;
     ${({ theme }) => theme.flexSet.flexRowCenter};
@@ -87,7 +87,8 @@ const IntroWrap = styled.div`
     ${({ theme }) => theme.device.mobile_wide} {
       // 가로 화면
       // 도로 배경화면
-      background: url('./img/intro_bg_X.png') no-repeat center;
+      background: url('https://i.ibb.co/SBB2nVk/Intro-bg-x.png') no-repeat
+        center;
       background-size: cover;
       & > div:nth-child(1) {
         // 올 그린 이미지
