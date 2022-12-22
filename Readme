@@ -1,0 +1,54 @@
+* 서버실행 명령어
+
+react : npm run start
+express : npm run server
+동시실행 : npm run dev (npm i npm install concurrently 해야함!)
+
+* Styled-component / ThemeProvider
+Styled-component ThemeProvider => Theme 폴더의 theme 참고 (속성값을 객체 형식으로 불러옴)
+형식 ) ${({theme})=>theme.객체명.프로퍼티} => 프로퍼티 키값 적용
+
+ex)
+const Test = styled.div`
+  width: 100px;
+  height: 100px;
+  background: ${({ theme }) => theme.Color.black};
+`;
+
+
+*calcPx()
+피그마에 px 로 되어있는 요소들을 vw로 바꿔줌(화면너비 320px 기준)
+
+ex)
+const Test = styled.div`
+  width: ${calcPx(100)};
+  =(100/(320/100)) / 31.3vw;
+  height: ${calcPx(100)};
+  background: ${({ theme }) => theme.Color.black};
+`;
+
+*이미지 경로 입력시 예시
+<img src="/img/CCTV.png" alt = "이미지">
+
+*axios 예시 AxiosExample 참고
+-GET/POST 있음
+*api key 변수에 담아 사용하기
+ex) const MAP = process.env.REACT_APP_KAKAO_KEY;
+
+  useEffect(() => {
+     axiosSet
+      .get(`//dapi.kakao.com/v2/maps/sdk.js?appkey=${MAP}`) // API url 입력
+       .then((res) => console.log(res.data)) // axios는 default가 JSON으로 값을 받아옴
+      .catch((e: ErrorCallback) => {
+         if (e) throw e;
+         console.log('에러');
+       }); //에러처리
+ }, []);
+
+ *media query
+ ex)
+ const Media = styled.div`
+  ${({ theme }) => theme.device.mobile} {
+    background-color: salmon;
+  }
+`;

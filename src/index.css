@@ -1,0 +1,29 @@
+body {
+  max-width: 768px;
+  min-width: 320px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  border: none;
+}
+a,
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+ol,
+ul {
+  list-style: none;
+}
