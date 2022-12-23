@@ -21,7 +21,7 @@ router.get("/:id", (req, res) => {
           console.log('CCTV 연동 완료')
         });
         break;
-      case "outbreak":
+      case "out":
         request(
           {
             url: `http://www.utic.go.kr/guide/imsOpenData.do?key=${process.env.ITS_KEY_SANGHEE}`,
