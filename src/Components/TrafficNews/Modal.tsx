@@ -14,16 +14,16 @@ const Modal = (props: any) => {
 
   const { open, falseSet } = props;
 
-  useEffect(() => {
-    axios
-      .get('http://localhost:4545/api/out')
-      .then((res) => {
-        setData(res.data.elements[0].elements);
-      })
-      .catch((e?: ErrorCallback) => {
-        console.log(e);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get('http://localhost:4545/api/out')
+  //     .then((res) => {
+  //       setData(res.data.elements[0].elements);
+  //     })
+  //     .catch((e?: ErrorCallback) => {
+  //       console.log(e);
+  //     });
+  // }, []);
 
   let DataArr: Dataset[] = [];
   data.map((value: any) => {

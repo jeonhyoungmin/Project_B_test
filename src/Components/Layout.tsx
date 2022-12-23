@@ -3,7 +3,7 @@ import Header from './Header';
 import Congestion from './Congestion/Congestion';
 import Speedlimit from '@/Components/Speedlimit/map/SpeedMarker_cluster_enfCam';
 import CCTV from './CCTV/CCTV';
-import TrafficNews from './TrafficNews/TrafficNews';
+// import TrafficNews from './TrafficNews/TrafficNews';
 import styled from 'styled-components';
 
 declare global {
@@ -34,9 +34,9 @@ const LayOut = () => {
       ) : button === 'cctv' ? (
         <CCTV />
       ) : null}
-      <TrafficSet>
+      {/* <TrafficSet>
         <TrafficNews />
-      </TrafficSet>
+      </TrafficSet> */}
     </>
   );
 };
