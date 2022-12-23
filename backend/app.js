@@ -10,7 +10,7 @@ const Port = process.env.Port || 4545;
 
 app.use(
   cors({
-    origin: "*",
+    origin: "http://54.180.136.40/",
     credentials: true,
   })
 );
