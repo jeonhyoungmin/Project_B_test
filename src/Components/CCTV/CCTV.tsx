@@ -13,7 +13,7 @@ const CCTV = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4545/cctv`)
+      .get(`http://localhost:4545/api/cctv`)
       .then((res: AxiosResponse) => {
         Setcctv(res.data);
 
