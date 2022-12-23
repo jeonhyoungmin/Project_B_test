@@ -1,5 +1,7 @@
 const express = require("express"); // express
 const cors = require("cors");
+const fs = require('fs')
+const path = require('path')
 const router = require("./Router/ApiSetGET");
 
 
@@ -15,10 +17,11 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use("/api", router);
+app.use(express.static(path.join(__dirname, '../dist')));
 
 app
   .get("/", (req, res) => {
-    res.send(`server Start ${Port}`);
+    res.sendFile(path.join(__dirname, '../dist', "index.html"))
   })
   .listen(Port, err => {
     if (err) throw err;
