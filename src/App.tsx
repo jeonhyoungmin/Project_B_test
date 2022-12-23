@@ -11,7 +11,7 @@ import { Web } from './Components/Web';
 // import '../public/img/web.png';
 import '../public/img/green_logo.svg';
 import '../public/img/Camera.svg';
-// import '../public/img/limit_0.png';
+import '../public/img/limit_0.png';
 // import '../public/img/limit_20.png';
 // import '../public/img/limit_30.png';
 // import '../public/img/limit_40.png';

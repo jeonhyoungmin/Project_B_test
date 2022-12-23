@@ -14,7 +14,10 @@ module.exports = merge(common, {
     open: true, //dev server 구동 후 브라우저 열기
     hot: true, //webpack의 HMR기능활성화
     compress: true, //모든 항목에 대해 gzip압축 사용
-    port: 3000, //접속 포트 설정
+    port: 8080, //접속 포트 설정
+    proxy: {
+      "/": "http://localhost"
+    },
     historyApiFallback: true,//다중 엔트리 일 때 시작시 기본 사용할 페이지를 지정해 줄 수 있음. 
     liveReload: true,
   },
