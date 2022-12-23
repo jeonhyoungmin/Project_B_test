@@ -9,10 +9,7 @@ const app = express();
 const Port = process.env.Port || 4545;
 
 app.use(
-  cors({
-    origin: "http://54.180.136.40/",
-    credentials: true,
-  })
+  cors()
 );
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
