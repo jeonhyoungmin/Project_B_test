@@ -16,7 +16,7 @@ const Modal = (props: any) => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:4545/api/out')
+      .get('http://43.201.86.175/api/out')
       .then((res) => {
         setData(res.data.elements[0].elements);
       })
