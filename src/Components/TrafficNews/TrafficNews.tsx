@@ -51,7 +51,7 @@ const TrafficNews = () => {
     padding-right: 0 1rem;
     //지도위에 올라가게 설정
     position: absolute;
-    bottom: 2rem;
+    bottom: 3%;
     z-index: 2;
     ${({ theme }) => theme.flexSet.flexRowCenter};
   `;

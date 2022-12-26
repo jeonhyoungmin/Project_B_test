@@ -94,7 +94,8 @@ const IntroWrap = styled.div`
         // 올 그린 이미지
         width: ${calcPxX(100)};
         height: ${calcPxX(12)};
-        background: url('./img/intro_AllGreen.png') no-repeat;
+        background: url('https://i.ibb.co/4KqxGjk/Intro-All-Green.png')
+          no-repeat;
         background-size: ${calcPxX(100)} ${calcPxX(12)};
         position: relative;
         bottom: 5vh;
@@ -102,9 +103,10 @@ const IntroWrap = styled.div`
       & > div:nth-child(2) {
         // 가운데 동그라미 이미지
         width: ${calcPxX(160)};
-        height: ${calcPxX(140)};
-        background: url('./img/intro_Traffic.png') no-repeat center;
-        background-size: ${calcPxX(160)} ${calcPxX(140)};
+        height: ${calcPxX(162.8)};
+        background: url('https://i.ibb.co/tY2r0qh/intro-Traffic.png') no-repeat
+          center;
+        background-size: cover;
         & > div {
           // 차 svg 감싼 div
           width: ${calcPx(200)};
@@ -133,7 +135,7 @@ const IntroWrap = styled.div`
     }
   }
 `;
-const Intro = () => {
+const Intro = ({ SetTruth }: { SetTruth: (val: boolean) => void }) => {
   const [redCar, setRedCar] = useState({ bgcolor: 'black', matrix: '0' });
   const [yellowCar, setYellowCar] = useState({ bgcolor: 'black', matrix: '0' });
   const [greenCar, setGreenCar] = useState({ bgcolor: 'black', matrix: '0' });
@@ -172,6 +174,7 @@ const Intro = () => {
         if (Intros !== null) {
           Intros.style.opacity = '0';
           Intros.style.zIndex = '-4';
+          SetTruth(true);
         }
       }, 4500);
     });
