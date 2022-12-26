@@ -4,7 +4,7 @@ import styled, { keyframes } from 'styled-components';
 import Modal from './Modal';
 import { calcPx } from '@/Hooks/CalcPx';
 
-const ITS = process.env.REACT_APP_ITS_KEY_SPARE;
+const ITS = process.env.AWS_APP_KEY;
 //대전 실시간 사고·공사 api
 const url = `https://openapi.its.go.kr:9443/eventInfo?apiKey=${ITS}&type=all&eventType=all&minX=127.252183&maxX=127.538356&minY=36.194005&maxY=36.499218&getType=json`;
 const TrafficNews = () => {
@@ -91,12 +91,14 @@ const TrafficNews = () => {
       <Digit
         onClick={() => {
           setOpen(!open);
-        }}>
+        }}
+      >
         <Siren>
           <img
             className='img'
             src='https://i.ibb.co/DR3r17L/Siren.png'
-            alt='siren'></img>
+            alt='siren'
+          ></img>
         </Siren>
         <WrapDiv>
           {news !== null ? (
