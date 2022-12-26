@@ -24,7 +24,7 @@ router.get('/:id', (req, res) => {
       case 'out':
         request(
           {
-            url: `http://www.utic.go.kr/guide/imsOpenData.do?key=${process.env.ITS_KEY_SANGHEE}`,
+            url: `http://www.utic.go.kr/guide/imsOpenData.do?key=${process.env.AWS_APP_KEY}`,
             method: 'GET',
           },
           (error, response, body) => {
