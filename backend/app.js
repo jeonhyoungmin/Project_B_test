@@ -7,10 +7,7 @@ const app = express();
 const Port = process.env.Port || 4545;
 
 app.use(
-  cors({
-    origin: "*",
-    credentials: true,
-  })
+  cors()
 );
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -18,7 +15,7 @@ app.use("/api", router);
 
 app
   .get("/", (req, res) => {
-    res.send(`server Start ${Port}`);
+    res.send(`server Start ${Port}`);s
   })
   .listen(Port, err => {
     if (err) throw err;
