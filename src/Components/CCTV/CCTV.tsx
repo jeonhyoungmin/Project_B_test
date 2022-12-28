@@ -158,8 +158,7 @@ const CCTV = () => {
           position: 'relative',
           overflow: 'hidden',
           zIndex: '2',
-        }}
-      ></div>
+        }}></div>
     </>
   );
 };
