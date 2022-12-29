@@ -34,10 +34,10 @@ const TrafficNews = () => {
   //css
   const move = keyframes`
     0%{
-      transform: translateX(100%);
+      transform: translateX(150px);
     }
     100%{
-      transform: translateX(-200%);
+      transform: translateX(-300px);
     }
   `;
 
@@ -67,9 +67,6 @@ const TrafficNews = () => {
       padding-right: 10px;
       animation: ${move} 10s linear infinite;
       ${({ theme }) => theme.flexSet.flexRowCenter}
-      &>span {
-        ${({ theme }) => theme.fontSize.font_12}
-      }
     }
     & > div.flow_stop {
       ${({ theme }) => theme.flexSet.flexRowCenter}
@@ -112,7 +109,7 @@ const TrafficNews = () => {
             news.map((item: any, index: number) => {
               return (
                 <div className='flow' key={index}>
-                  <span>
+                  <span style={{ fontSize: '12px' }}>
                     {item.roadName}
                     {item.message}
                   </span>
