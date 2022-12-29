@@ -108,7 +108,7 @@ const TrafficNews = () => {
             alt='siren'></img>
         </Siren>
         <WrapDiv>
-          {news !== null && news === [] ? (
+          {news !== null && news !== [] ? (
             news.map((item: any, index: number) => {
               return (
                 <div className='flow' key={index}>
